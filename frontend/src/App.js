@@ -110,6 +110,25 @@ function AppRoutes() {
   );
 }
 
+// Themed Toaster component
+const ThemedToaster = () => {
+  const { theme } = useTheme();
+  return (
+    <Toaster 
+      position="top-center" 
+      theme={theme}
+      richColors 
+      toastOptions={{
+        style: {
+          background: 'hsl(var(--card))',
+          border: '1px solid hsl(var(--border))',
+          color: 'hsl(var(--foreground))',
+        }
+      }}
+    />
+  );
+};
+
 function App() {
   return (
     <BrowserRouter>
@@ -117,17 +136,7 @@ function App() {
         <AuthProvider>
           <WishlistProvider>
             <AppRoutes />
-            <Toaster 
-              position="top-center" 
-              richColors 
-              toastOptions={{
-                style: {
-                  background: 'hsl(var(--card))',
-                  border: '1px solid hsl(var(--border))',
-                  color: 'hsl(var(--foreground))',
-                }
-              }}
-            />
+            <ThemedToaster />
           </WishlistProvider>
         </AuthProvider>
       </ThemeProvider>

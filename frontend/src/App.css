@@ -30,6 +30,11 @@ html {
   color: inherit;
 }
 
+/* Hide emergent badge */
+#emergent-badge {
+  display: none !important;
+}
+
 /* Focus visible styles */
 *:focus-visible {
   outline: 2px solid hsl(263 70% 58%);

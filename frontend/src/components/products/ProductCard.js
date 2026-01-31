@@ -55,6 +55,7 @@ export const ProductCard = ({ product, index = 0 }) => {
               size="icon"
               onClick={handleWishlistClick}
               data-testid={`wishlist-btn-${product.id}`}
+              aria-label={inWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
               className={`absolute top-3 right-3 rounded-full backdrop-blur-md transition-all ${
                 inWishlist 
                   ? 'bg-red-500/20 text-red-400 hover:bg-red-500/30' 

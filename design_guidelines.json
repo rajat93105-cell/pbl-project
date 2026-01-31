@@ -1,0 +1,94 @@
+{
+  "brand_identity": {
+    "name": "MUJ Campus Marketplace",
+    "mission": "A premium, curated marketplace for Manipal University Jaipur students to buy, sell, and trade campus essentials.",
+    "tone": "Trustworthy, Modern, Exclusive, Student-Centric",
+    "archetype": "Electric & Neon (Adapted for Campus Trust)",
+    "visual_style": "Neo-Glass"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["600", "700"],
+      "usage": "Use for all section titles, hero text, and product names. Tight tracking (-0.02em)."
+    },
+    "body": {
+      "font_family": "DM Sans, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for descriptions, UI labels, and metadata. Relaxed line-height."
+    },
+    "installation": "Import from Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@400;600;700;900&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "background": "#030712",
+      "foreground": "#f8fafc",
+      "primary": "#7c3aed",
+      "primary_gradient": "linear-gradient(135deg, #7c3aed 0%, #2563eb 100%)",
+      "secondary": "#1e293b",
+      "accent": "#06b6d4",
+      "glass_surface": "rgba(17, 24, 39, 0.7)",
+      "glass_border": "rgba(255, 255, 255, 0.1)"
+    },
+    "usage_rules": {
+      "backgrounds": "Use deep gray/black (#030712) as the main canvas. Avoid pure black.",
+      "cards": "Use Glassmorphism: bg-gray-900/70 backdrop-blur-xl border border-white/10.",
+      "text": "Headings in White (#f8fafc). Body in Slate-400 (#94a3b8).",
+      "ctas": "Primary Gradient for main actions. Hover states should increase brightness/glow."
+    }
+  },
+  "layout_system": {
+    "grid_strategy": "Bento Grid",
+    "spacing": "Generous. Use p-8 to p-12 for sections. Gap-6 to Gap-8 for grids.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "z_index": {
+      "glass_overlay": 50,
+      "content": 10,
+      "background_blobs": 0
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-gradient-to-r from-violet-600 to-blue-600 text-white rounded-full px-8 py-3 font-medium hover:shadow-[0_0_20px_rgba(124,58,237,0.5)] transition-all duration-300",
+      "secondary": "bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-full px-6 py-2 hover:bg-white/20 transition-all"
+    },
+    "cards": {
+      "product": "group relative overflow-hidden rounded-2xl bg-gray-900/60 backdrop-blur-md border border-white/10 hover:border-violet-500/50 transition-all duration-300 hover:-translate-y-1",
+      "category": "rounded-xl bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-white/5 p-6 hover:border-violet-500/30 transition-all cursor-pointer"
+    },
+    "inputs": {
+      "style": "bg-gray-950/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all placeholder:text-gray-600"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/5 border border-white/10",
+    "gradients": "Use subtle radial gradients in the background (violet/blue) to create depth behind glass cards.",
+    "motion": "Use framer-motion for entrance animations (fade-up) and hover effects (scale-up).",
+    "icons": "Lucide React (default). Use thin strokes (1.5px) for elegance."
+  },
+  "image_assets": {
+    "hero_bg": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop",
+    "categories": {
+      "electronics": "https://images.unsplash.com/photo-1608148118722-56da485f9e84?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "books": "https://images.unsplash.com/photo-1581019055756-93b5361f9536?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dorm": "https://images.unsplash.com/photo-1553172366-55b235a466f6?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "other": "https://images.unsplash.com/photo-1516894780606-8d6bf03297cf?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "placeholders": {
+      "user_avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+      "product_fallback": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop"
+    }
+  },
+  "instructions_to_main_agent": {
+    "setup": "Ensure 'lucide-react', 'framer-motion', and 'clsx' 'tailwind-merge' are installed.",
+    "routing": "Use React Router DOM. Create a layout wrapper that handles the Navbar and Footer.",
+    "state": "Use Context API for Auth and Cart/Wishlist management.",
+    "critical_rule": "Do NOT use solid white backgrounds. Always use the dark theme palette defined above. Use the 'glass_surface' for all containers.",
+    "file_structure": "Keep components in /src/components/ui (shadcn) and /src/components/custom (your custom marketing components)."
+  },
+  "universal_guidelines": {
+    "anti_slop": "Avoid generic centered layouts. Use asymmetry. Use noise textures if possible.",
+    "interaction": "Every button must have a hover state. Every page transition should be smooth.",
+    "accessibility": "Ensure text contrast is high (White on Dark Gray). Use aria-labels for icon buttons."
+  }
+}

@@ -3,19 +3,19 @@ import { Toaster } from "sonner";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import { WishlistProvider } from "./context/WishlistContext";
 import { ThemeProvider, useTheme } from "./context/ThemeContext";
-import { Layout } from "./components/layout/Layout";
+import { Layout } from "./components/layout/Layout.js";
 
 // Pages
-import Landing from "./pages/Landing";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Marketplace from "./pages/Marketplace";
-import ProductDetail from "./pages/ProductDetail";
-import AddProduct from "./pages/AddProduct";
-import EditProduct from "./pages/EditProduct";
-import MyListings from "./pages/MyListings";
-import Wishlist from "./pages/Wishlist";
-import Profile from "./pages/Profile";
+import Landing from "./pages/Landing.js";
+import Login from "./pages/Login.js";
+import Signup from "./pages/Signup.js";
+import Marketplace from "./pages/Marketplace.js";
+import ProductDetail from "./pages/ProductDetail.js";
+import AddProduct from "./pages/AddProduct.js";
+import EditProduct from "./pages/EditProduct.js";
+import MyListings from "./pages/MyListings.js";
+import Wishlist from "./pages/Wishlist.js";
+import Profile from "./pages/Profile.js";
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {

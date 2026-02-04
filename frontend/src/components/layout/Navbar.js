@@ -29,6 +29,7 @@ export const Navbar = () => {
 
   const navLinks = [
     { href: '/marketplace', label: 'Marketplace' },
+    ...(user ? [{ href: '/dashboard', label: 'Dashboard' }] : []),
   ];
 
   const isActive = (path) => location.pathname === path;

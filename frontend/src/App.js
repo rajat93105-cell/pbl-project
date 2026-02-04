@@ -78,6 +78,11 @@ function AppRoutes() {
         } />
         
         {/* Protected Routes */}
+        <Route path="/dashboard" element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } />
         <Route path="/add-product" element={
           <ProtectedRoute>
             <AddProduct />

@@ -16,6 +16,7 @@ import EditProduct from "./pages/EditProduct.js";
 import MyListings from "./pages/MyListings.js";
 import Wishlist from "./pages/Wishlist.js";
 import Profile from "./pages/Profile.js";
+import Dashboard from "./pages/Dashboard.js";
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
